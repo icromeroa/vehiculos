@@ -1,13 +1,29 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package ordenvehiculo;
 
-/**
- *
- * @author 301
- */
 public class Vehiculo {
+    
+    private String placa;
+    private String marca;
+    private float vMax;
+
+    public Vehiculo(String placa, String marca, float vMax) {
+        this.placa = placa;
+        this.marca = marca;
+        this.vMax = vMax;
+    }
+
+    public String getPlaca() {
+        return placa;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public float getvMax() {
+        return vMax;
+    }
+    
     
 }
