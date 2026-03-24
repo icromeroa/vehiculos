@@ -29,7 +29,7 @@ public class Conductor extends Vehiculo {
     }
     
     
-    public mostrarInfo(String nombre, int id, String aniosExp, Vehiculo vehiculoAsignado){
+    public void mostrarInfo(String nombre, int id, String aniosExp, Vehiculo vehiculoAsignado){
         System.out.println("-----Informaciòn conductor-----" );
         System.out.println("Nombre: " + nombre);
         System.out.println("Id: " + id);
