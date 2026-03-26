@@ -11,7 +11,7 @@ public class Camion extends Vehiculo {
     
     private double capCarga;
     
-    public Automovil(double capCarga, String placa, String marca, double v_max ) {
+    public Camion(double capCarga, String placa, String marca, float v_Max ) {
         super (placa, marca, vMax);
         
         this.capCarga = capCarga;

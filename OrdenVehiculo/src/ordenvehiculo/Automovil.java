@@ -11,7 +11,7 @@ public class Automovil extends Vehiculo {
 
     private int n_pasajeros;
 
-    public Automovil(int n_pasajeros, String placa, String marca, double v_max ) {
+    public Automovil(int n_pasajeros, String placa, String marca, float v_Max ) {
         super (placa, marca, vMax);
         this.n_pasajeros = n_pasajeros;
     }

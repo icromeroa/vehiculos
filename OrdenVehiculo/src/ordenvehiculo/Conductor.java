@@ -2,7 +2,7 @@
 package ordenvehiculo;
 
 
-public class Conductor extends Vehiculo {
+public class Conductor {
     private String nombre;
     private int id;
     private String aniosExp;
@@ -27,9 +27,11 @@ public class Conductor extends Vehiculo {
     public String getAniosExp() {
         return aniosExp;
     }
+    public Vehiculo getVehiculo(){
+    	return vehiculoAsignado; 
+    }
     
-    
-    public void mostrarInfo(String nombre, int id, String aniosExp, Vehiculo vehiculoAsignado){
+    public void mostrarInfo(){
         System.out.println("-----Informaciòn conductor-----" );
         System.out.println("Nombre: " + nombre);
         System.out.println("Id: " + id);
