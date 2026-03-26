@@ -1,8 +1,7 @@
 
 package ordenvehiculo;
 
-public class Vehiculo {
-    
+public abstract class Vehiculo {
     private String placa;
     private String marca;
     private float vMax;
@@ -13,17 +12,20 @@ public class Vehiculo {
         this.vMax = vMax;
     }
 
-    public String getPlaca() {
-        return placa;
-    }
+	public String getPlaca() {
+		return placa;
+	}
 
-    public String getMarca() {
-        return marca;
-    }
+	public String getMarca() {
+		return marca;
+	}
 
-    public float getvMax() {
-        return vMax;
-    }
+	public float getvMax() {
+		return vMax;
+	}
+
+	
+	public abstract String getTipo();
     
     
 }

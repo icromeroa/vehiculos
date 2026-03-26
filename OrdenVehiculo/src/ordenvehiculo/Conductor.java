@@ -9,7 +9,6 @@ public class Conductor {
     private Vehiculo vehiculoAsignado;
 
     public Conductor(String nombre, int id, String aniosExp, Vehiculo vehiculoAsignado) {
-        super(placa, marca, vMax);
         this.nombre = nombre;
         this.id = id;
         this.aniosExp = aniosExp;
@@ -36,11 +35,13 @@ public class Conductor {
         System.out.println("Nombre: " + nombre);
         System.out.println("Id: " + id);
         System.out.println("Años de experiencia" + aniosExp);
+ 
         
         System.out.println("-----Informaciòn vehìculo asignado-----" );
-        System.out.println("Placa: " + getPlaca());
-        System.out.println("Marca: " + getMarca());
-        System.out.println("Velocidad màxima: " + getvMax());
+        System.out.println("Tipo: " + vehiculoAsignado.getTipo());
+        System.out.println("Placa: " + vehiculoAsignado.getPlaca());
+        System.out.println("Marca: " + vehiculoAsignado.getMarca());
+        System.out.println("Velocidad màxima: " + vehiculoAsignado.getvMax() + "km/h");
         
     }
 }

@@ -11,18 +11,20 @@ package ordenvehiculo;
 public class OrdenVehiculo {
 
     public static void main(String[] args) {
-    	// Registrar vehículos
-        Automovil auto   = new Automovil(5, "ABC-123", "Toyota", 180);
-        Camion    camion = new Camion(10000, "XYZ-789", "Volvo", 120);
+    	
+        Automovil auto   = new Automovil(5, "ABC-123", "Toyota", 180.0f);
+        Camion    camion = new Camion(10000, "XYZ-789", "Volvo", 120.1f);
 
-        // Registrar conductores y asignar vehículo
-        Conductor c1 = new Conductor("Carlos López", 1001, 8, auto);
-        Conductor c2 = new Conductor("Ana Pérez",    1002, 5, camion);
+        
+        Conductor c1 = new Conductor("Carlos López", 1001, "8", auto);
+        Conductor c2 = new Conductor("Ana Pérez",    1002, "5", camion);
 
-        // Mostrar información completa
+        
         c1.mostrarInfo();
         System.out.println();
         c2.mostrarInfo();
+        
+        
     }
     
 }

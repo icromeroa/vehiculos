@@ -8,10 +8,9 @@
  * @author 301
  */
 public class Camion extends Vehiculo {
-    
     private double capCarga;
     
-    public Camion(double capCarga, String placa, String marca, float v_Max ) {
+    public Camion(double capCarga, String placa, String marca, float vMax ) {
         super (placa, marca, vMax);
         
         this.capCarga = capCarga;
@@ -19,5 +18,9 @@ public class Camion extends Vehiculo {
 
     public double getCapCarga() {
         return capCarga;
+    }
+    
+    public String getTipo() {
+    	return "Camion (capCarga: " + capCarga + ")";
     }
 }
